@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #313132;
+    --headColor: rgb(20, 20, 20);
+    --bgMaincolor: #f2edea;
+    --contactColor: rgb(36, 153, 192);
+    --contactColorHover: rgb(46, 172, 214);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./img/bg.jpg");
+    background-size:cover;
+}
+
+header, .banniere, main, footer{
+    width: 1000px;
+}
+
+header{
+
+    background-color: var(--headColor);
+    display: flex;
+}
+
+header a{
+    color: white;
+    text-decoration: none; 
+    margin: 0.25em 0.75em 0.25em 0.75em;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: underline; 
+
+}
+
+
+
+.fb_img{
+    width: 1.5rem;
+}
+
+.logo{
+    width: 11rem;
+    /*border-radius: 10px;*/
+}
+
+.banniere{
+    height: 300px;
+    overflow: hidden;
+    background-image: url("./img/banniere.jpg");
+    background-position: 0px;
+}
+
+.banniere img{
+    width: 100%;
+}
+
+main{
+    min-height: calc(100vh - 4em - 4em);
+    background-color: var(--bgMaincolor);
+}
+
+section{
+    padding: 2em;
+}
+
+h1{
+    font-size: 3em;
+    grid-area: title;
+}
+
+p{
+    margin: 1em 0;
+}
+
+.presentation_list{
+    list-style: none;
+}
+.presentation_list li{
+    position: relative;
+    margin: 2em 0;
+}
+
+.materiel_list{
+    margin: 1em;
+}
+
+.materiel_list li{
+    margin: 1em 0 0 0;
+}
+
+.deroulant{
+    display: none;
+}
+.deroulant li{
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.displayer{
+    color: blue;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+ul{
+    list-style: square;
+}
+.haltere, .coeur, .cahier, .body{
+    position: absolute;
+    left: -2em;
+}
+.haltere{
+    width: 1.75em;
+    top: -0.25em;
+}
+.coeur{
+    width: 1.5em;
+    top: -0.6em;
+}
+.cahier{
+    width: 1.5em;
+    top: -0.25em;
+}
+.body{
+    width: 1.25em;
+    top: -0.5em;
+}
+
+.address_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.address_list li{
+    color: var(--contactColor);
+}
+
+.map{
+    margin: 1em 0;
+}
+
+.contact_secition{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "title title"
+    "info contact";
+}
+
+.infos{
+    grid-area: info;
+}
+.contact{
+    grid-area: contact;
+}
+
+.form_contact{
+    display: flex;
+    flex-direction: column;
+}
+.form_contact input[type="text"]{
+    border-radius: 5px;
+    height: 3em;
+    border: 1px solid var(--contactColor);
+}
+.form_contact label{
+    margin: 0.75em 0;
+}
+.mail_msg{
+    border-radius: 5px;
+    resize: none;
+    border: 1px solid var(--contactColor);
+    height: 9em;
+}
+
+.mail_msg:focus, .form_contact input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0px 0px 4px 2px var(--contactColor);
+    border: 1px solid var(--contactColorHover);
+    opacity: 0.6;
+}
+
+.email_button{
+    width: 6em;
+    height: 3em;
+    margin: 1em 0;
+    border: none;
+    background-color: var(--contactColor);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.email_button:hover{
+    background-color: var(--contactColorHover);
+}
+
+footer{
+    background-color: var(--headColor);
+    padding: 1em;
+}
+footer p{
+    color: white;
+    opacity: 0.6;
+}
+footer a{
+    color: lightblue;
+}
+
+@media screen and (max-width: 1000px){
+    *{
+        font-size: 12px;
+    }
+    header, .banniere, main, footer{
+        width: 100%;
+    }
+}
