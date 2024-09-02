@@ -152,6 +152,8 @@ ul{
 
 .map{
     margin: 1em 0;
+    width: 25em;
+    height: 20em;
 }
 
 .contact_secition{
@@ -230,4 +232,15 @@ footer a{
     header, .banniere, main, footer{
         width: 100%;
     }
+    .contact_secition{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .infos, .contact{
+        margin-top: 2em;
+    }
+
 }
