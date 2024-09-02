@@ -22,9 +22,9 @@ header, .banniere, main, footer{
 }
 
 header{
-
-    background-color: var(--headColor);
     display: flex;
+    background-color: var(--headColor);
+    z-index: 1;
 }
 
 header a{
@@ -54,14 +54,14 @@ nav a:hover{
 
 .logo{
     width: 11rem;
-    /*border-radius: 10px;*/
 }
 
 .banniere{
-    height: 300px;
     overflow: hidden;
-    background-image: url("./img/banniere.jpg");
-    background-position: 0px;
+}
+
+.banniere video{
+    width: 100%;
 }
 
 .banniere img{
@@ -242,5 +242,4 @@ footer a{
     .infos, .contact{
         margin-top: 2em;
     }
-
 }
