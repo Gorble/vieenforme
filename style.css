@@ -19,12 +19,13 @@ body{
 
 header, .banniere, main, footer{
     width: 1000px;
+    z-index: 1;
+    opacity: 0.9;
 }
 
 header{
     display: flex;
     background-color: var(--headColor);
-    z-index: 1;
 }
 
 header a{
