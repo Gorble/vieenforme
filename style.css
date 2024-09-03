@@ -20,7 +20,6 @@ body{
 header, .banniere, main, footer{
     width: 1000px;
     z-index: 1;
-    opacity: 0.9;
 }
 
 header{
@@ -249,5 +248,8 @@ footer a{
     }
     .infos, .contact{
         margin-top: 2em;
+    }
+    .body{
+        background-image: none;
     }
 }
