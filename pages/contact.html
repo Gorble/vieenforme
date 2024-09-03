@@ -1,31 +1,39 @@
-<section class="contact_secition">
+<section>
     <h1>Infos & contact</h1>
-    <div class="infos">
-        <h2>Informations</h2>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.86319249536916!2d2.5313976625316488!3d48.86241046407001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1725140359315!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <address>
-            <h3>Adresse</h3>
-            <ul class="address_list">
-                <li>Vie en forme</li>
-                <li>Gymnase Marcel Cerdan 11 rue du 19 mars 1962</li>
-                <li>93330</li>
-                <li>Neuilly sur Marne</li>
-            </ul>     
-        </address>
+    <div class="contact_section">
+        <div class="infos">
+            <h2>Informations</h2>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.86319249536916!2d2.5313976625316488!3d48.86241046407001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1725140359315!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address>
+                <h3>Adresse</h3>
+                <ul class="address_list">
+                    <li>Vie en forme</li>
+                    <li>Gymnase Marcel Cerdan 11 rue du 19 mars 1962</li>
+                    <li>93330</li>
+                    <li>Neuilly sur Marne</li>
+                </ul>     
+            </address>
+            <p>L'entrée se situe rue d'Alsace Lorraine (voir la photo ci-dessous)</p>
+        </div>
+        <div class="entree">
+            <img src="../img/devanture.PNG" alt="" srcset="">
+
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <form class="form_contact">
+                <label for="email">VOTRE EMAIL</label>
+                <input type="text" id="email" name="email" required>
+    
+                <label for="nom">VOTRE NOM</label>
+                <input type="text" id="nom" name ="nom" required>
+    
+                <label for="message">VOTRE MESSAGE</label>
+                <textarea name="message" id="message" class="mail_msg" required></textarea>
+                <button class="email_button">Envoyer</button>
+            </form>
+            <div class="result"></div>
+        </div>
     </div>
-    <div class="contact">
-        <h2>Contact</h2>
-        <form class="form_contact">
-            <label for="email">VOTRE EMAIL</label>
-            <input type="text" id="email" name="email" required>
-
-            <label for="nom">VOTRE NOM</label>
-            <input type="text" id="nom" name ="nom" required>
-
-            <label for="message">VOTRE MESSAGE</label>
-            <textarea name="message" id="message" class="mail_msg" required></textarea>
-            <button class="email_button">Envoyer</button>
-        </form>
-        <div class="result"></div>
-    </div> 
+     
 </section>

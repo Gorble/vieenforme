@@ -79,7 +79,6 @@ section{
 
 h1{
     font-size: 3em;
-    grid-area: title;
 }
 
 p{
@@ -156,20 +155,28 @@ ul{
     height: 20em;
 }
 
-.contact_secition{
+.contact_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: min-content 2fr;
     grid-template-areas: 
-    "title title"
-    "info contact";
+    "info contact"
+    "entree entree";
 }
 
 .infos{
     grid-area: info;
+    margin: 2em 0;
 }
 .contact{
     grid-area: contact;
+    margin: 2em 0;
+}
+.entree{
+    grid-area: entree;
+}
+.entree img{
+    width: 100%;
 }
 
 .form_contact{
@@ -232,7 +239,7 @@ footer a{
     header, .banniere, main, footer{
         width: 100%;
     }
-    .contact_secition{
+    .contact_section{
         display: flex;
         flex-direction: column;
     }
